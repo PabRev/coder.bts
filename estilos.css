@@ -31,3 +31,19 @@ footer{
     
     background-color: rgba(32, 32, 32, 0.247);
 }
+.agrandar{
+    transition: all .3s;
+}
+.agrandar:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.352);
+}
+#tabla__inicio a{
+    transition: 0.3s;
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.849);
+}
+#tabla__inicio a:hover{
+    color: rgb(198, 0, 0);
+    font-size: 1.3rem;
+}
