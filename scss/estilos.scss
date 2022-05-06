@@ -1,4 +1,3 @@
-
 //variables
 
 $green:rgb(44, 132, 44);
@@ -10,15 +9,18 @@ $green:rgb(44, 132, 44);
     background-color: #a4508b;
     background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
 }
+
 @mixin sizes($width, $height) {
     width: $width;
-    height: $height;    
+    height: $height;
 }
+
 @mixin centrar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 @mixin der {
     display: flex;
     justify-content: end;
@@ -27,7 +29,7 @@ $green:rgb(44, 132, 44);
 
 //clase para hacer extend mas adelante
 
-.texto{
+.texto {
     font-family: var(--bs-font-sans-serif);
 }
 
@@ -42,34 +44,43 @@ footer {
     @include back-gradient;
 }
 
-.btn{
+.btn {
     color: $green;
-    border: 1px solid $green ;
+    border: 1px solid $green;
     border-radius: 0.3rem;
 }
 
 .logo__header {
-    @include sizes(2.5rem,auto )
+    @include sizes(2.5rem, auto)
 }
 
 .logo__footer {
-    @include sizes(6.5rem,auto )
+    @include sizes(6.5rem, auto)
 }
 
 .main {
 
-    #icon__contact{
+    
+    .titulo{
+        background: linear-gradient(#e77a7a, #5f0a87);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    #icon__contact {
         font-size: 10rem;
         color: rgb(130, 130, 130);
     }
 
     #inicio__tutorial {
-        @include sizes(70%,25rem);
+        @include sizes(70%, 25rem);
     }
 
     .inicio__carrito {
-        
-        @include sizes(30%,25rem);
+
+        @include sizes(30%, 25rem);
         overflow: auto;
 
         button {
@@ -93,7 +104,7 @@ footer {
 
     .catalogo {
         .card__imagen {
-            @include sizes(auto,17rem);
+            @include sizes(auto, 17rem);
         }
     }
 
@@ -117,8 +128,8 @@ footer {
         .nosotros__texto {
             border-radius: 12px;
             padding: 2rem;
-
-            background-color: rgba(32, 32, 32, 0.247);
+            width: 50%;
+            background-color: rgba(237, 187, 222, 0.247);
         }
 
 
@@ -128,8 +139,8 @@ footer {
 
 footer {
     .powered {
-        
-        @include sizes(auto,1.5rem);
+
+        @include sizes(auto, 1.5rem);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.379);
         background: linear-gradient(gray, rgb(74, 74, 74));
 
@@ -141,7 +152,7 @@ footer {
     }
 
     .footer {
-        @include sizes(100%,7rem);
+        @include sizes(100%, 7rem);
 
         .contacto {
             @include der;

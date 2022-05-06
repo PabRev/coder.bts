@@ -29,6 +29,15 @@ footer {
   height: auto;
 }
 
+.main .titulo {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e77a7a), to(#5f0a87));
+  background: linear-gradient(#e77a7a, #5f0a87);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .main #icon__contact {
   font-size: 10rem;
   color: #828282;
@@ -89,7 +98,8 @@ footer {
 .main .card .nosotros__texto {
   border-radius: 12px;
   padding: 2rem;
-  background-color: rgba(32, 32, 32, 0.247);
+  width: 50%;
+  background-color: rgba(237, 187, 222, 0.247);
 }
 
 footer .powered {
