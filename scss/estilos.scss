@@ -60,13 +60,17 @@ footer {
 
 .main {
 
-    
-    .titulo{
+
+    .titulo {
         background: linear-gradient(#e77a7a, #5f0a87);
         -webkit-background-clip: text;
         color: transparent;
         font-size: 3rem;
         font-weight: 700;
+    }
+
+    .error {
+        font-size: 10rem;
     }
 
     #icon__contact {
@@ -75,7 +79,7 @@ footer {
     }
 
     #inicio__tutorial {
-        @include sizes(70%, 25rem);
+        min-height: 13rem;
     }
 
     .inicio__carrito {
@@ -128,8 +132,10 @@ footer {
         .nosotros__texto {
             border-radius: 12px;
             padding: 2rem;
-            width: 50%;
+            width: 100%;
             background-color: rgba(237, 187, 222, 0.247);
+            max-height: 11rem;
+            overflow: auto;
         }
 
 

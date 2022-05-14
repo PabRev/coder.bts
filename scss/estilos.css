@@ -38,14 +38,17 @@ footer {
   font-weight: 700;
 }
 
+.main .error {
+  font-size: 10rem;
+}
+
 .main #icon__contact {
   font-size: 10rem;
   color: #828282;
 }
 
 .main #inicio__tutorial {
-  width: 70%;
-  height: 25rem;
+  min-height: 13rem;
 }
 
 .main .inicio__carrito {
@@ -98,8 +101,10 @@ footer {
 .main .card .nosotros__texto {
   border-radius: 12px;
   padding: 2rem;
-  width: 50%;
+  width: 100%;
   background-color: rgba(237, 187, 222, 0.247);
+  max-height: 11rem;
+  overflow: auto;
 }
 
 footer .powered {
